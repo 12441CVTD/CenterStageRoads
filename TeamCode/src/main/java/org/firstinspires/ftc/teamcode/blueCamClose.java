@@ -65,10 +65,6 @@ import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 public class blueCamClose extends LinearOpMode {
 
     /* Declare OpMode members. */
-    // private DcMotor fL = null;
-    // private DcMotor fR = null;
-    // private DcMotor bL = null;
-    // private DcMotor bR = null;
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor fL = null;
     private DcMotor fR = null;
@@ -146,36 +142,77 @@ public class blueCamClose extends LinearOpMode {
         // telemetry.update();
         int barkAndBark = pipeline.getAnalysis();
         if(barkAndBark == 1) {
-            telemetry.addData("works", 1);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 600);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1100);
+            driveWay(0.5, 0.5, 0.5, 0.5, 1700);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 2) {
-            telemetry.addData("works", 2);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 800);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1700);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 3) {
-            telemetry.addData("works", 3);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, -0.5, 0.5, -0.5, 600);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(0.5, -0.5, -0.5, 0.5, 1100);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 1700);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 0) {
             telemetry.addData("broke", 0);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 400);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 2200);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         telemetry.update();
-        //driveWay(-0.6,0.6,0.6,-0.6, 1000);
-        //driveWay(0.4,-0.4,-0.4,0.4, 200);
-        // fL.setPower(0);
-        // fR.setPower(0);
-        // bL.setPower(0);
-        // bR.setPower(0);
     }
     public void driveWay(double lF, double rF, double lB, double rB, int s){
         runtime.reset();
         while(opModeIsActive() && (runtime.milliseconds() < s)){
-            // fL.setPower(lF);
-            // fR.setPower(rF);
-            // bL.setPower(lB);
-            // bR.setPower(rB);
+             fL.setPower(lF + lF * 0.1);
+             fR.setPower(rF + rF * 0.1);
+             bL.setPower(lB);
+             bR.setPower(rB);
         }
-        // fL.setPower(0);
-        // fR.setPower(0);
-        // bL.setPower(0);
-        // bR.setPower(0);
+         fL.setPower(0);
+         fR.setPower(0);
+         bL.setPower(0);
+         bR.setPower(0);
+         sleep(250);
+    }
+    public void GabeLeftToothOpen(){
+        clawTwo.setPosition(0.45);
+    }
+    public void GabeLeftToothClose(){
+        clawTwo.setPosition(0.77);
+    }
+    public void GabeRightToothOpen(){
+        claw.setPosition(0.45);
+    }
+    public void GabeRightToothClose(){
+        claw.setPosition(0.13);
     }
 }

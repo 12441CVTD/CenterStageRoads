@@ -159,23 +159,50 @@ public class redCamClose extends LinearOpMode {
         }
         telemetry.update();
         if(barkAndBark == 1) {
-
-            driveWay(-0.6,0.6,0.6,-0.6, 500);
-            sleep(301);
-            driveWay(0.4,0.4,0.4,0.4, 200);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1100);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 1700);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 2) {
-            driveWay(0.6, 0.6, 0.6, 0.6, 300);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 800);
+            driveWay(0.5, -0.5, -0.5, 0.5, 1700);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 3) {
-            driveWay(0.6, - 0.6, -0.6, 0.6, 500);
-            sleep(299);
-            driveWay(0.4, 0.4, 0.4, 0.4, 200);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, -0.5, 0.5, -0.5, 600);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 600);
+            driveWay(0.5, -0.5, -0.5, 0.5, 1100);
+            driveWay(0.5, 0.5, 0.5, 0.5, 1700);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 0) {
-            driveWay(-0.6, 0.6, 0.6, -0.6, 600);
-            sleep(298);
-            driveWay(0.4, -0.4, -0.4, 0.4,200);
+            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            GabeLeftToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1100);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 1700);
+            driveWay(0.3, 0.3, 0.3, 0.3, 400);
+            GabeRightToothOpen();
+            driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
          fL.setPower(0);
          fR.setPower(0);
@@ -185,8 +212,8 @@ public class redCamClose extends LinearOpMode {
     public void driveWay(double lF, double rF, double lB, double rB, int s) {
         runtime.reset();
         while (opModeIsActive() && (runtime.milliseconds() < s)) {
-            fL.setPower(lF);
-            fR.setPower(rF);
+            fL.setPower(lF + lF * 0.1);
+            fR.setPower(rF + rF * 0.1);
             bL.setPower(lB);
             bR.setPower(rB);
         }
@@ -196,16 +223,16 @@ public class redCamClose extends LinearOpMode {
         bR.setPower(0);
     }
     public void GabeLeftToothOpen(){
-        claw.setPosition(0.0);
+        clawTwo.setPosition(0.45);
     }
     public void GabeLeftToothClose(){
-        claw.setPosition(1.0);
+        clawTwo.setPosition(0.77);
     }
     public void GabeRightToothOpen(){
-        clawTwo.setPosition(0.0);
+        claw.setPosition(0.45);
     }
     public void GabeRightToothClose(){
-        clawTwo.setPosition(1.0);
+        claw.setPosition(0.13);
     }
 
     }
