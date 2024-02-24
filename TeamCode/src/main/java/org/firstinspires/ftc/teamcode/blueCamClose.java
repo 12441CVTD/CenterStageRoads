@@ -142,6 +142,8 @@ public class blueCamClose extends LinearOpMode {
         // telemetry.update();
         int barkAndBark = pipeline.getAnalysis();
         if(barkAndBark == 1) {
+            telemetry.addData("works", 1);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -153,6 +155,8 @@ public class blueCamClose extends LinearOpMode {
             driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 2) {
+            telemetry.addData("works", 2);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             GabeLeftToothOpen();
@@ -164,6 +168,8 @@ public class blueCamClose extends LinearOpMode {
             driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 3) {
+            telemetry.addData("works", 3);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.5, -0.5, 0.5, -0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -177,6 +183,7 @@ public class blueCamClose extends LinearOpMode {
         }
         if(barkAndBark == 0) {
             telemetry.addData("broke", 0);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 400);
             driveWay(0.3, 0.3, 0.3, 0.3, 400);

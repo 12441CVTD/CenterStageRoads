@@ -159,6 +159,7 @@ public class redCamClose extends LinearOpMode {
         }
         telemetry.update();
         if(barkAndBark == 1) {
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -171,6 +172,7 @@ public class redCamClose extends LinearOpMode {
             driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 2) {
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             GabeLeftToothOpen();
@@ -182,6 +184,7 @@ public class redCamClose extends LinearOpMode {
             driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 3) {
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.5, -0.5, 0.5, -0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -193,6 +196,7 @@ public class redCamClose extends LinearOpMode {
             driveWay(-0.3, -0.3, -0.3, -0.3, 400);
         }
         if(barkAndBark == 0) {
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);

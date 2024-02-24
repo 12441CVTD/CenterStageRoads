@@ -195,7 +195,7 @@ public class redCamFar extends LinearOpMode {
         fR.setPower(rF + rF * 0.1);
         bL.setPower(lB);
         bR.setPower(rB);
-    }
+    }//dangerous organization
     fL.setPower(0);
     fR.setPower(0);
     bL.setPower(0);
