@@ -147,6 +147,7 @@ public class redCamFar extends LinearOpMode {
         int barkAndBark = pipeline.getAnalysis();
         if(barkAndBark == 1) {
             telemetry.addData("works", 1);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -155,6 +156,7 @@ public class redCamFar extends LinearOpMode {
         }
         if(barkAndBark == 2) {
             telemetry.addData("works", 2);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             GabeLeftToothOpen();
@@ -162,6 +164,7 @@ public class redCamFar extends LinearOpMode {
         }
         if(barkAndBark == 3) {
             telemetry.addData("works", 3);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(0.5, -0.5, 0.5, -0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
@@ -170,6 +173,7 @@ public class redCamFar extends LinearOpMode {
         }
         if(barkAndBark == 0) {
             telemetry.addData("broke", 0);
+            GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
