@@ -149,35 +149,50 @@ public class redCamFar extends LinearOpMode {
             telemetry.addData("works", 1);
             GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            sleep(100);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            sleep(100);
             GabeLeftToothOpen();
+            sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
         }
         if(barkAndBark == 2) {
             telemetry.addData("works", 2);
             GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            sleep(100);
             GabeLeftToothOpen();
+            sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 800);
         }
         if(barkAndBark == 3) {
             telemetry.addData("works", 3);
             GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            sleep(100);
             driveWay(0.5, -0.5, 0.5, -0.5, 600);
+            sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            sleep(100);
             GabeLeftToothOpen();
+            sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 600);
         }
         if(barkAndBark == 0) {
             telemetry.addData("broke", 0);
             GabeLeftToothClose();
             driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            sleep(100);
             driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            sleep(100);
             GabeLeftToothOpen();
+            sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
         }
         telemetry.update();
@@ -195,12 +210,11 @@ public class redCamFar extends LinearOpMode {
         fR.setPower(rF + rF * 0.1);
         bL.setPower(lB - lB * 0.1);
         bR.setPower(rB - lB * 0.1);
-    }//dangerous organization
+    }
     fL.setPower(0);
     fR.setPower(0);
     bL.setPower(0);
     bR.setPower(0);
-    sleep(250);
 }
     public void GabeLeftToothOpen(){
         clawTwo.setPosition(0.45);
