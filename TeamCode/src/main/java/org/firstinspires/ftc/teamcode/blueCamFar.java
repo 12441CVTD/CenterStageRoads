@@ -193,8 +193,8 @@ public class blueCamFar extends LinearOpMode {
         while(opModeIsActive() && (runtime.milliseconds() < s)){
             fL.setPower(lF + lF * 0.1);
             fR.setPower(rF + rF * 0.1);
-            bL.setPower(lB);
-            bR.setPower(rB);
+            bL.setPower(lB - lB* 0.1);
+            bR.setPower(rB - rB * 0.1);
         }
         fL.setPower(0);
         fR.setPower(0);
