@@ -246,9 +246,9 @@ public class Bassoon extends LinearOpMode {
             if(gamepad2.right_bumper){ //right one
                 if(((runtime.milliseconds() - clawTimerA) > 200)){
                     if(ropen)
-                        claw.setPosition(0.77);//close
+                        claw.setPosition(0.45);//close
                     else if(!ropen)
-                        claw.setPosition(0.45);//open
+                        claw.setPosition(0.77);//open
                     ropen = !ropen;
                     clawTimerA = (double) runtime.milliseconds();
                 }
@@ -256,9 +256,9 @@ public class Bassoon extends LinearOpMode {
             if(gamepad2.left_bumper){ //left one
                 if(((runtime.milliseconds() - clawTimerB) > 200)){
                     if(lopen)
-                        clawTwo.setPosition(0.13);//close
+                        clawTwo.setPosition(0.45);//close
                     else if(!lopen)
-                        clawTwo.setPosition(0.45);//open
+                        clawTwo.setPosition(0.13);//open
                     lopen = !lopen;
                     clawTimerB = (double) runtime.milliseconds();
                 }

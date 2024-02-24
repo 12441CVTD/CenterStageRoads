@@ -148,20 +148,20 @@ public class redCamFar extends LinearOpMode {
         if(barkAndBark == 1) {
             telemetry.addData("works", 1);
             GabeLeftToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
-            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 800);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
             GabeLeftToothOpen();
             sleep(100);
-            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
         }
         if(barkAndBark == 2) {
             telemetry.addData("works", 2);
             GabeLeftToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
@@ -172,28 +172,28 @@ public class redCamFar extends LinearOpMode {
         if(barkAndBark == 3) {
             telemetry.addData("works", 3);
             GabeLeftToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
-            driveWay(0.5, -0.5, 0.5, -0.5, 600);
+            driveWay(0.5, -0.5, 0.5, -0.5, 800);
+            sleep(100);
+            driveWay(0.3, 0.3, 0.3, 0.3, 800);
+            sleep(100);
+            GabeLeftToothOpen();
+            sleep(100);
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
+        }
+        if(barkAndBark == 0) {
+            telemetry.addData("broke", 0);
+            GabeLeftToothClose();
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
+            sleep(100);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 800);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
             GabeLeftToothOpen();
             sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 600);
-        }
-        if(barkAndBark == 0) {
-            telemetry.addData("broke", 0);
-            GabeLeftToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
-            sleep(100);
-            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
-            sleep(100);
-            driveWay(0.3, 0.3, 0.3, 0.3, 800);
-            sleep(100);
-            GabeLeftToothOpen();
-            sleep(100);
-            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
         }
         telemetry.update();
         //driveWay(-0.6,0.6,0.6,-0.6, 1000);

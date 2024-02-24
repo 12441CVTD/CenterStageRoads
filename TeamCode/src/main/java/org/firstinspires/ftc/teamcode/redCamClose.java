@@ -161,17 +161,17 @@ public class redCamClose extends LinearOpMode {
         if(barkAndBark == 1) {
             GabeLeftToothClose();
             GabeRightToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
-            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 800);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
             GabeLeftToothOpen();
             sleep(100);
-            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
             sleep(100);
-            driveWay(-0.5, 0.5, 0.5, -0.5, 1100);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1000);
             sleep(100);
             driveWay(-0.5, -0.5, -0.5, -0.5, 1700);
             sleep(100);
@@ -184,7 +184,7 @@ public class redCamClose extends LinearOpMode {
         if(barkAndBark == 2) {
             GabeLeftToothClose();
             GabeRightToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
@@ -192,7 +192,7 @@ public class redCamClose extends LinearOpMode {
             sleep(100);
             driveWay(-0.3, -0.3, -0.3, -0.3, 800);
             sleep(100);
-            driveWay(-0.5, -0.5, -0.5, -0.5, 800);
+            driveWay(-0.5, -0.5, -0.5, -0.5, 1000);
             sleep(100);
             driveWay(0.5, -0.5, -0.5, 0.5, 1700);
             sleep(100);
@@ -205,17 +205,17 @@ public class redCamClose extends LinearOpMode {
         if(barkAndBark == 3) {
             GabeLeftToothClose();
             GabeRightToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
-            driveWay(0.5, -0.5, 0.5, -0.5, 600);
+            driveWay(0.5, -0.5, 0.5, -0.5, 800);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
             GabeLeftToothOpen();
             sleep(100);
-            driveWay(-0.3, -0.3, -0.3, -0.3, 600);
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
             sleep(100);
-            driveWay(0.5, -0.5, -0.5, 0.5, 1100);
+            driveWay(0.5, -0.5, -0.5, 0.5, 1000);
             sleep(100);
             driveWay(0.5, 0.5, 0.5, 0.5, 1700);
             sleep(100);
@@ -226,17 +226,17 @@ public class redCamClose extends LinearOpMode {
         if(barkAndBark == 0) {
             GabeLeftToothClose();
             GabeRightToothClose();
-            driveWay(0.5, 0.5, 0.5, 0.5, 800);
+            driveWay(0.5, 0.5, 0.5, 0.5, 900);
             sleep(100);
-            driveWay(-0.5, 0.5, -0.5, 0.5, 600);
+            driveWay(-0.5, 0.5, -0.5, 0.5, 800);
             sleep(100);
             driveWay(0.3, 0.3, 0.3, 0.3, 800);
             sleep(100);
             GabeLeftToothOpen();
             sleep(100);
-            driveWay(-0.3, -0.3, -0.3, -0.3, 1000);
+            driveWay(-0.3, -0.3, -0.3, -0.3, 800);
             sleep(100);
-            driveWay(-0.5, 0.5, 0.5, -0.5, 1100);
+            driveWay(-0.5, 0.5, 0.5, -0.5, 1000);
             sleep(100);
             driveWay(-0.5, -0.5, -0.5, -0.5, 1700);
             sleep(100);
